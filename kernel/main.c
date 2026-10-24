@@ -14,7 +14,7 @@ main()
     consoleinit();
     printkinit();
     printk("\n");
-    printk("xv6 kernel is booting\n");
+    printk("My first xv6 kernel modification by le xuan ngoc!\n");
     printk("\n");
     kinit();            // physical page allocator
     kvminit();          // create kernel page table

@@ -21,7 +21,15 @@ sys_getpid(void)
 {
   return myproc()->pid;
 }
+uint64
+sys_hello(void)
+{
+  struct proc *p = myproc();
 
+  printk("kernel: hello() called by pid %d (running in kernel)\n", p->pid);
+
+  return 0;
+}
 uint64
 sys_fork(void)
 {
